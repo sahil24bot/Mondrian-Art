@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondarian Project</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #000;
+      }
+
+      .container {
+        display: grid;
+        gap: 10px;
+        height: 345px;
+        width: 640px;
+        background-color: rgb(61, 50, 50);
+        grid-template-columns: 1fr 2fr 0.5fr;
+        grid-template-rows: 2fr 1fr 1fr;
+      }
+      .items {
+        background-color: wheat;
+      }
+      .red {
+        background-color: red;
+        grid-area: 1/2/1/4;
+      }
+      .blue {
+        grid-area: 2/1/4/1;
+        background-color: darkblue;
+      }
+      .white3 {
+        grid-area: 2/2/4/2;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items white1"></div>
+      <div class="items red"></div>
+      <div class="items blue"></div>
+      <div class="items white2"></div>
+      <div class="items white3"></div>
+      <div class="items yellow"></div>
+    </div>
+  </body>
+</html>
